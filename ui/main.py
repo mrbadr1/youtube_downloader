@@ -6,31 +6,20 @@ __author__ = 'Mrbadr1 <abroukbadre@gmail.com>'
 
 from stylesheets import *
 
-try:
-    import os
-    import requests,pytube,sys
-    from PyQt5.QtWidgets import QApplication,QLabel,QStackedWidget,QCheckBox,QMessageBox,QStyledItemDelegate,QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLineEdit, QTableWidget, QTableWidgetItem, QLabel, QComboBox, QHeaderView
-    from PyQt5.QtCore import Qt,QSize
-    from PyQt5.QtWidgets import QFileDialog
-    from pytube import exceptions
-    from PyQt5.QtGui import QPixmap,QPainter,QColor
-    from io import BytesIO
-    from pytube import YouTube
-    from selenium import webdriver
-    from selenium.webdriver.chrome.options import Options
-    from selenium.webdriver.common.by import By
-    from pyqt_checkbox_table_widget.checkBoxTableWidget import CheckBoxTableWidget
-except ImportError:
-    import requests,pytube,sys
-    from PyQt5.QtWidgets import QApplication,QLabel,QStackedWidget,QCheckBox,QMessageBox,QStyledItemDelegate,QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLineEdit, QTableWidget, QTableWidgetItem, QLabel, QComboBox, QHeaderView
-    from PyQt5.QtCore import Qt,QSize
-    from PyQt5.QtWidgets import QFileDialog
 
-    from pytube import exceptions
-    from PyQt5.QtGui import QPixmap,QPainter,QColor
-    from io import BytesIO
-    from pyqt_checkbox_table_widget.checkBoxTableWidget import CheckBoxTableWidget
-
+import os
+import requests,pytube,sys
+from PyQt5.QtWidgets import QApplication,QLabel,QStackedWidget,QCheckBox,QMessageBox,QStyledItemDelegate,QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLineEdit, QTableWidget, QTableWidgetItem, QLabel, QComboBox, QHeaderView
+from PyQt5.QtCore import Qt,QSize
+from PyQt5.QtWidgets import QFileDialog
+from pytube import exceptions
+from PyQt5.QtGui import QPixmap,QPainter,QColor
+from io import BytesIO
+from pytube import YouTube
+ from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from pyqt_checkbox_table_widget.checkBoxTableWidget import CheckBoxTableWidget
 
 video_info_dict = {}
 row_position=0
