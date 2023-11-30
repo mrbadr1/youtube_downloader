@@ -103,6 +103,11 @@ class YouTubeDownloaderApp(QWidget):
 
         self.url_label = QLabel('YouTube URL:')
         self.url_input = QLineEdit()
+        self.url_input.setStyleSheet("QLineEdit {"
+                        "border: 2px solid #ccc;"
+                        "border-radius: 10px;"
+                        "padding: 5px;"
+                        "}")
 
         self.url_input.setAlignment(Qt.AlignCenter)
         self.search_button = QPushButton('Search')
@@ -145,8 +150,15 @@ class YouTubeDownloaderApp(QWidget):
         self.download_audio_button.setStyleSheet(download_audio_style)
         output_label = QLabel('Output:', self)
         self.output_textbox = QLineEdit(self)
+        self.output_textbox.setStyleSheet("QLineEdit {"
+                        "border: 2px solid #ccc;"
+                        "border-radius: 10px;"
+                        "padding: 3px;"
+                        "}")
         browse_button = QPushButton('Browse')
-        browse_button.clicked.connect(self.browse_output_directory)        
+        browse_button.setStyleSheet(search_botton_style)
+        browse_button.clicked.connect(self.browse_output_directory)  
+
         output_layout = QHBoxLayout()  # Use QHBoxLayout to place the label and button on the same line
         output_layout.addWidget(output_label)
         output_layout.addWidget(self.output_textbox)
